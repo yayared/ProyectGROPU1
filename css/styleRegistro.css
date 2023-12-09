@@ -1,0 +1,146 @@
+@font-face{
+    font-family: boyd;
+    src: url(/Font-Family/tpDletra.ttf);
+}
+@font-face{
+    font-family: carlos;
+    src: url(/Recursos-Imagenes/Imagenes-Resgistro/OFL.txt);
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+
+}
+body{
+    background-image: url(/Recursos-Imagenes/Imagenes-Resgistro/leo0n.gif);
+    background-size: cover;
+    background-color: black;
+}
+
+.hoja1{
+    width: 1300px;
+    height: 800px;
+    background-color:transparent;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    background-color: #116ba700;
+    
+     
+}
+
+h1{
+    font-size: 35PX;
+    text-align: center;
+    padding: 5px;
+    font-family: boyd;
+    width: 100%;
+    /*color: white;*/
+    color: rgb(153, 55, 127);
+    text-shadow: 2px 2px 4px #116ba7
+
+    
+}
+.subhoja1{
+    width: 500px;
+    height: 660px;
+    background-color: rgba(250, 248, 249, 0);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px 80px 80px ;
+    flex-grow: 3;
+  
+    
+    
+    
+
+}
+.subhoja1 input{
+    width: 500px;
+    height: 60px;
+    border: 3px solid rgba(139, 65, 168, 0.678);
+    margin:auto;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(247, 248, 248);
+    border-radius: 15px;
+    color: rgb(207, 22, 22);
+    display: flex;
+    font-family: carlos;
+    
+    
+    
+    
+    
+    
+    
+       
+    
+}
+.subhoja1 button {
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 15px;
+    
+    display: flex;
+    margin: 20px 30px 10px 265px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #fa0707;
+    background-color: #1d4a5e91;
+    font-weight: bold;
+   
+      
+}
+::placeholder{
+    color:#c40808a8 ;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #f0ebeb;
+}
+
+.subhoja2{
+    width: 500px;
+    max-width: 500PX;
+    height:800px;
+    
+    border-radius: 20px;
+    display: flex;
+    flex-grow: 2;
+    
+    flex-direction: column-reverse;
+    align-content: center;
+    
+    
+}
+.subhoja2 video{
+    width:750px ;
+    max-width: 650PX;
+    height:650px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0px 0px 100px 0px;
+    
+}
+.subhoja2 img{
+    width: 400px;
+    max-width : 400px ;
+     
+    margin: 30px 30px 0px 100px;
+    
+    display: flex;
+    background-color: #00070c00;
+    border-radius: 15px;
+
+    
+}

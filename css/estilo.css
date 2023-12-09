@@ -1,0 +1,471 @@
+body{
+    background: linear-gradient(rgb(0, 0, 0), rgba(66, 9, 104, 0.4), rgba(0, 0, 0, 1.0));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 1400px;
+    height: 3100px;
+    margin: 0 auto;
+}
+
+
+/*----------------------------- Header -------------------------*/
+header{
+    height: 80px;
+    width: 100%;
+    margin: 0 auto 0;
+    background: black;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu{
+
+    height: 70px;
+    width: 100%;
+    width: 1400px;
+    max-width: 1400px;
+    /*background: red;*/
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    overflow: hidden;
+    /*background-color: #ff0808;*/
+    height: 65px;
+    width: 220px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .logo img{
+        height: 65px;
+    }
+/*.logo{
+    
+    height: 65px;
+    width: 220px;
+    background: green;
+    margin-left: 5px;
+    background-image: url(Recursos-Imagenes/Logo/Logo-Web.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+
+}*/
+
+
+.Menu-Cat{
+    height: 65px;
+    width: 550px;
+    /*background: green;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.categoria{
+    display: flex;
+    align-items: center;
+}
+
+.categoria p{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+
+.barra-busqueda{
+
+    height: 25px;
+    width: 400px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.Menu-Cat2{
+
+    height: 65px;
+    width: 350px;
+    margin-right: 15px;
+    /*background: green;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nosotros{
+    text-align: center;
+    font-weight: bold;
+    
+}
+    .nosotros a{
+        text-decoration: none;
+        color: white;
+    }
+.sesion{
+
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+    .sesion a{
+        text-decoration: none;
+        color: white;
+
+    }
+
+.carrito-compras{
+
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+/*------------------------ Fin Header -----------------------------*/
+
+
+/*imagen y lo demás*/ 
+.anterior{
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    width: 100%;
+  max-width: 1340px;
+  margin: 0px auto 0;
+}
+.anterior h3{   
+    margin-left: 50px;
+    font-size: 15px;
+    color: white;
+}
+
+.anterior img{
+    width: 70%;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+   
+}
+    
+.product-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    
+}
+
+
+.main-image img {
+    width: 800px;
+    height: auto;
+    
+}
+.main-image{
+    margin-left: -124px;
+}
+
+.thumbnail-images img {
+    
+    width: 80px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid transparent; /* Borde transparente por defecto */
+}
+
+.thumbnail-images img.active {
+    border-color: rgb(91, 135, 201);
+}
+
+
+.thumbnail-images{
+    position: absolute; 
+    display: grid;
+    width: 100%;
+    max-width: 280px;
+    margin: 10px auto 0;
+    margin-left: -640px;   
+    margin-top: 60px;
+}
+
+
+
+
+/*detalles del producto*/ 
+.PPadre{
+margin-left: 40px;
+}
+
+.p1 h3{
+    color: rgb(127, 224, 211);   
+}
+
+.p2,.p2,.p3,.p4, h1{
+    color: white
+}
+
+li{
+color: white;
+}
+
+.padreshorizontales{
+    display: flex;   
+}
+
+.PPadre21 ul{
+    list-style: none;   
+}
+/*boton de detalle selección*/
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: -250px;
+    
+}
+
+/* Estilo para la etiqueta de selección */
+.dropdown-label {
+    margin-top: -18px;
+    background-color: #000000;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Estilo para la lista de opciones */
+.dropdown-options {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    z-index: 1;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Estilo para las opciones */
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.parrafoboton{
+    color: white;
+}
+
+/* Estilo para las opciones al pasar el mouse por encima */
+.dropdown-option:hover {
+    background-color: rgb(21, 22, 22);
+    border-radius: 8px;
+}
+/*botón agregar al carrito*/ 
+.item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    width: 260px;
+    border-radius: 20px;
+    height: 40px;
+}
+
+.decrement,.increment{
+    border-radius: 20px;
+    border-style: none;
+    background-color: white;
+}
+
+
+button {
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity {
+    margin: 0 10px;
+}
+
+
+
+.agregaralcarrito button{
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgb(117, 179, 238);
+    height: 40px;
+}
+
+
+/*ESTILOS DE DETALLES */ 
+
+.tech-specs {
+    
+    width: 1000px;
+    padding: 10px;
+    margin-top: 120px;
+    margin-left: 140px;
+    
+} 
+
+.tech-specs h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+.tech-specs ul {
+    list-style-type: none;
+    padding: 0;
+}
+.tech-specs li {
+    margin-bottom: 5px;
+    
+}
+
+.d01,.d02,.d03,.d04,.d05,.d06,.d07,.d08,.d09,.d010,.e01,.e02,.e03,.e04,.e05,.e06,.e07,.e08,.e09{
+    display: flex;
+}
+
+#d1,#d2,#d3,#d4,#d5,#d6,#d7,#d8,#d9,#d10,#e1,#e2,#e3,#e4,#e5,#e6,#e7,#e8,#e9{
+    margin-right: 700px;
+    color: rgb(136, 247, 210);
+}
+
+hr{
+ border-color: #979090; 
+}
+
+
+/*formulario*/ 
+
+.padreformulario{
+    width: 100%;
+    max-width: 1400px;
+    margin: 10px auto 0;
+    background-color: #000000;
+  }
+  
+  .formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .left-side {
+    display: flex;
+    align-items: center;
+  }
+  
+  .email-input {
+    padding: 11px;
+    width: 500px;
+    margin-right: -20%;
+    background-color: #f5f5f5; 
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .subscribe-button {
+    background-color: #00CED1; 
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: normal; 
+    transition: background-color 0.3s, color 0.3s; /* Transición de color */
+    font-weight: bold;
+  }
+  .subscribe-button:hover {
+    background-color: #555151; /* Cambio de color de fondo en hover */
+    color: #ffffff; /* Cambio de color de texto en hover */
+    font-weight: bold; /* Hacer el texto en negrita en hover */
+  }
+  .right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .right-side a {
+    text-decoration: none;
+    
+  }
+  
+  .right-side img {
+    width: 40px; /* Cambia el tamaño de los iconos de redes sociales */
+    height: 40px;
+    
+    margin-left: 40px;
+  }
+  .right-side h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-right: 40px;
+    
+  }
+/* Footer */
+.footer {
+    
+    background-color: #222121;
+    display: flex;
+    flex-direction: row; /* Cambia la dirección de los elementos a horizontal */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+    align-items: center;
+    padding: 20px;
+}
+
+.footer article {
+    flex-basis: 30%;
+    max-width: 600px;
+    text-align: justify;
+    color: white;
+}
+
+.footer h2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.footer ul {
+    list-style-type: none;
+    line-height: 1.6;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Modificación de cada uno de los iconos en el footer */
+.telf h2 img,
+.Whatsapp h2 img,
+.gmail h2 img,
+.Localizanos h2 img {
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 24px;
+}

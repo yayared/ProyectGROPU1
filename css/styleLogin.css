@@ -1,0 +1,195 @@
+@font-face {
+    font-family: Arial;
+    src: url(/Font-Family/tpDletra.ttf);
+}
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(/Recursos-Imagenes/Imagenes-Login/Fondo/Fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: url(/Recursos-Imagenes/Logo/Isotipo-Web.png)16 16,auto
+ 
+    
+}
+
+.flex-contenedor{
+    display: flex;
+    height: 80vh;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.877);
+    padding: 0px;
+    margin: 100px 20px 0px 100px ; 
+    /*flex-direction:row;  es para darle la direccion al contenedor de columna y al reves con row-reverse */
+}
+.flex-contenedor .uno {
+    background-color: rgba(233, 24, 248, 0);
+    width:75%;
+    margin: 0px;
+    text-align: center;
+    line-height: center;
+    font-size: 30px;  
+}
+.flex-contenedor .uno video{
+    pointer-events: none;
+
+}
+.flex-contenedor .dos{
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.726);
+    text-align: center;
+    line-height: center;
+    font-size: 30px; 
+}
+.flex-contenedo .dos div{
+    display: grid;
+}
+
+/* css del formulario de login */
+.flex-contenedor .dos .logo{  
+    height: 25%; 
+}
+.flex-contenedor .dos .logo img{
+    height: 40px;
+    height: 80px;
+    justify-content: center;
+    margin-top: 70px; 
+}
+
+
+.flex-contenedor .formulario{
+    height: 44%;
+}
+.formulario form{   
+    margin-top: 8%;
+}
+.formulario {
+    margin: 0px;
+    padding: 15px;
+}
+
+.formulario  h2 {
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 2rem;
+    
+}
+.formulario a{
+    transition: background-color 0.3s;
+}
+.formulario a:hover{
+    color: #ba0cff;
+    text-decoration: underline;
+    
+}
+
+.formulario  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #9510e2;
+    border-radius: 5px;
+}
+
+.formulario  button {
+    width: 100%;
+    padding: 15px;
+    background-color: #7700ffda;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;  
+    transition: 1s;
+}
+.formulario  button:hover{
+    background-color: #e30cffb9;
+}
+.formulario p , a{
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    
+}
+.formulario  a{
+    text-decoration: none;
+}
+
+.flex-contenedor  .redes{   
+    height: 31%;
+}
+
+.mesotipo img{
+    height: 6vh;
+    margin: 30px;
+}
+.redes{
+    margin-left: 28px;
+}
+.sociales{
+    letter-spacing: 40px;
+    position: relative;
+    margin: 10px;
+    justify-content: center;
+    
+}
+.sociales a:hover {
+    
+    color: rgba(105, 99, 99, 0.89);
+    
+}
+.sociales img{
+    height: 30px;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+.sociales .f:hover {
+    
+    background-color: #181be4f1;
+    border-radius: 10px;
+    scale: 1.2;
+
+}
+.sociales .i:hover {
+    
+    background-color: #cc18e4f1;
+    border-radius: 10px;
+    scale: 1.2;
+}
+.sociales .y:hover {
+    
+    background-color: #ff0303f1;
+    border-radius: 10px;
+    scale: 1.2;
+}
+.google{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 50px 0px 50px;
+    transition: transform 0.3s ease;
+}
+.google:hover{
+    transform: scale(1.1);
+}
+.google img{
+    height: 40px;
+    position: relative;
+    margin-bottom: -6px;
+    
+}
+.google img:hover{
+    background-color: #000000dc;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+

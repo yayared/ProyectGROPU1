@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styleLogin.css">
+        <link rel="icon" href="Recursos-Imagenes/Logo/Isotipo-Web.png">
+        <title>Login</title>
+    </head>
+
+    <body>
+        
+            <div class="flex-contenedor">
+
+                <div class="uno">
+
+                    <video width="1070" height="800" autoplay preload="auto" loop muted>
+                        <source src="/Recursos-Imagenes/Imagenes-Login/Video/Video-Login.mp4" type="video/mp4">
+                        <!-- Agrega múltiples fuentes de video para soportar diferentes formatos -->
+                        <source src="tu_video.webm" type="video/webm">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+
+                </div>
+
+                <!-- de aca para abajo es el login   -->
+
+                <div class="dos">
+
+                    <div class="logo">
+
+                        <a href="index.html "><img src="Recursos-Imagenes/Logo/Logo-Web.png" alt=""></a>
+
+                    </div>
+
+                    <div class="formulario">
+
+                        <!-- aca es donde se ingresaran los datos y se enlazaran con el mysql  -->
+                        <form method="POST">
+
+                            <h2>SIGN IN</h2>
+                            
+                            <input type="text" name="usuario" placeholder="Usuario" required>
+                            <input type="password" name="contraseña" placeholder="Contraseña" required>
+                            <button type="submit">Iniciar Sesión</button>
+                            <p >Havent Account?<a href="registro.html">Create New Acconunt</a></p>
+
+                        </form>
+                        <!-- fin   -->
+
+                    </div>
+
+                    <div class="google">
+
+                        <a href="#"><img src="/Recursos-Imagenes/Imagenes-Login/Iconos/Icon-Google.png" alt=""></a>
+
+                    </div>
+
+                    <div class="redes">
+
+                        <div class="mesotipo">
+
+                            <img src="Recursos-Imagenes/Logo/Isotipo-Web.png" alt="">
+
+                        </div>
+
+                        <div class="sociales">
+
+                            <a href="#"><img class="f" src="/Recursos-Imagenes/Imagenes-Login/Iconos/Icon-Facebook.png" alt=""></a>
+                            <a href="#"><img class="i" src="/Recursos-Imagenes/Imagenes-Login/Iconos/Icon-Instagram.png" alt=""></a>
+                            <a href="#"><img class="y" src="/Recursos-Imagenes/Imagenes-Login/Iconos/Icon-Youtube.png" alt=""></a>
+        
+                        </div>
+
+                    </div>
+
+                </div>
+        
+            </div>
+    
+    </body>
+
+</html>
