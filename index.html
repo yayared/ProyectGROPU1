@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!--<link rel="stylesheet" href="carrusel.css">-->
     <title>Technology Group</title>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Googlefont -->
@@ -42,8 +42,44 @@
                 </div>
 
 
-            <!--inicia-->
+            <!--BUSQUEDA-->
+            <div class="menu-busqueda">
+                <label for="">Ingrese el nombre del producto: </label>
+                <input type="text" id="nombre_buscar">
+                <!-- Un único botón para buscar y abrir la modal -->
+                <button onclick="buscar()">Buscar</button>
+                <!-- Ventana modal inicia -->
 
+
+                
+                <input type="checkbox" id="btn-modal">
+                <div class="container-modal">
+                    <div class="content-modal"> 
+                        <div class="modal-part-1">
+                            <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/507609/Mouse-Gamer-Razer-Viper-Mini-Signature-Edition-30000DPI-49g-8khz_1699624712_g.jpg" alt="">
+                        </div>
+        
+                        <div class="modal-part-2">
+                            <h1 id="modal-nombre">Mouse razer super</h1>
+                            <p id="descripcion-1">Este es un mouse de Calidad<br>100% hecho para el usuario<br>ta piola :D</p>
+                        </div>
+        
+                        <div class="btn-cerrar">
+                            <label for="btn-modal">cerrar</label>
+                        </div>
+                                                    
+                    </div>
+                    <label for="btn-modal" class="cerrar-modal"></label>
+                </div>
+                <!-- Ventana modal termina aquí. -->
+        
+            </div>
+        
+            <!-- Script JavaScript -->
+            <script src="js/busqd.js"></script>
+
+
+        </div>
 
 
 
