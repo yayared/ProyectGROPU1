@@ -211,10 +211,6 @@ label, p{
     height: 367px;
 }
 
-
-
-
-
 .content-modal .btn-cerrar{
     width: 100%;
     margin-top: 15px;
@@ -286,27 +282,64 @@ label, p{
 
 /*------------------------    Novedades ----------------------------------*/
 
-.novedades{
-    margin: 0 auto ;
+#Conte-Flecha{
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     max-width: 1400px;
-    height: 70px;
-    background: black;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
+    height: 60px;
+    margin: -3.6px auto;
+    
+  }
 
-}
+  #BotonCarru{
+   margin-top: 500px;
+    background: red;
+  }
 
-.t1{
+  #prev-button{
+    margin-left: 1500px;
 
-    color: white;
-}
-.t2{
+  }
 
-    color: aqua;
-}
+  #next-button{
+    margin-right: 280px;
+
+  }
+
+  #prev-button, #next-button {
+    /*position: absolute;*/
+    margin-top: 30px;
+    /*transform: translateY(-50%);*/
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+      .TNovedades{
+
+        display: flex;
+        gap: 5px;
+       
+      }
+          .t1{
+
+            color: white;
+          }
+          .t2{
+          
+              color: aqua;
+          }
+          #prev-button {
+            left: 10px;
+          }
+      
+          #next-button {
+            right: 10px;
+          }
 
 /*--------------------------- Ofertas ------------------------------------*/
 
