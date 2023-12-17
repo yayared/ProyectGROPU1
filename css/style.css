@@ -92,7 +92,31 @@ label, p{
 }
  
 .menu-busqueda{
-    margin-top: 120px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#nombre_buscar{
+    width: 250px;
+    height: 28px;
+    border: none;
+    border-bottom-left-radius:  50px; ;
+    border-top-left-radius:  50px; ;
+    border-bottom-right-radius:  0px; ;
+    border-top-right-radius:  0px; ;
+    text-align: center;
+}
+
+#BotonB{
+    margin-left: -2px;
+    height: 30px;
+    background-color: aqua;
+    border-bottom-right-radius:  50px; ;
+    border-top-right-radius:  50px; ;
+    border-top-left-radius:  0px; ;
+    border-bottom-left-radius:  0px; 
+    
 }
 
 #listaArticulos{
