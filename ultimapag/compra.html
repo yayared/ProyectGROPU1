@@ -4,8 +4,8 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Carrito de Compras</title>
-      <link rel="stylesheet" href="css/estiloscarrito.css"> 
-      <link rel="stylesheet" href="css/estilocompra.css">
+      <link rel="stylesheet" href="/css/estiloscarrito.css"> 
+      <link rel="stylesheet" href="/ultimapag/estilocompra.css">
   </head>
   <body>
     <header>
@@ -159,12 +159,14 @@
     
         </div>
 
-        <input type="submit" value="PROCEDE A LA COMPRA " class="submit-btn">
+         
+        <button class="submit-btn" onclick="guardar()">Guardar</button>
 
     </form>
 
 </div>
-
+<script src="/js/tarjeta.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 
       <!-- Repite el mismo formato para los otros productos -->
