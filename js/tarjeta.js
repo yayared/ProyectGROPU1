@@ -23,6 +23,8 @@ function guardar() {
     .then(function (response) {
         console.log('Datos guardados con éxito:', response.data);
         alert('Datos de tarjeta de crédito guardados con éxito');
+
+        window.location.href = "index.html";
     })
     .catch(function (error) {
         console.error('Error al guardar los datos:', error);
