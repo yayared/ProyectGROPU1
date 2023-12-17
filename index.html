@@ -16,7 +16,7 @@
     <!-- Googlefont -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
-    
+
 </head>
 
 <body>
@@ -50,25 +50,40 @@
 
 
                 
-                <input type="checkbox" id="btn-modal">
-                <div class="container-modal">
-                    <div class="content-modal"> 
-                        <div class="modal-part-1">
-                            <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/507609/Mouse-Gamer-Razer-Viper-Mini-Signature-Edition-30000DPI-49g-8khz_1699624712_g.jpg" alt="">
-                        </div>
-        
-                        <div class="modal-part-2">
-                            <h1 id="modal-nombre">Mouse razer super</h1>
-                            <p id="descripcion-1">Este es un mouse de Calidad<br>100% hecho para el usuario<br>ta piola :D</p>
-                        </div>
-        
-                        <div class="btn-cerrar">
-                            <label for="btn-modal">cerrar</label>
-                        </div>
-                                                    
-                    </div>
-                    <label for="btn-modal" class="cerrar-modal"></label>
-                </div>
+             <!-- ... tu código HTML anterior ... -->
+<!-- ... tu código HTML anterior ... -->
+
+<input type="checkbox" id="btn-modal">
+<div class="container-modal">
+    <div class="content-modal"> 
+        <div class="modal-part-1">
+            <img id="modal-imagen" alt="">
+        </div>
+
+        <div class="modal-part-2">
+            <h1 id="modal-nombre">Mouse razer super</h1>
+            <p id="descripcion-1">
+                <span id="modal-marca"></span><br>
+                <span id="modal-costo"></span><br>
+                <span id="modal-sku"></span>
+            </p>
+            <a id="ver-detalles-btn" href="#" target="_blank">Ver detalles en otra página</a>
+        </div>
+
+        <div class="btn-cerrar">
+            <label for="btn-modal">cerrar</label>
+        </div>
+    </div>
+    <label for="btn-modal" class="cerrar-modal"></label>
+</div>
+
+<!-- ... el resto de tu código HTML ... -->
+
+<!-- Script JavaScript -->
+
+    
+<!-- ... el resto de tu código HTML ... -->
+
                 <!-- Ventana modal termina aquí. -->
         
             </div>

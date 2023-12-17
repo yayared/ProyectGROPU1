@@ -1,10 +1,8 @@
-
 // Configuración de la URL de la API
 const url_api = "http://localhost:5530/api/productos/nombre/";
 
 // Función para buscar y mostrar detalles
-function buscar() 
-{
+function buscar() {
     // Obtiene el nombre del producto ingresado por el usuario
     const nombre = document.getElementById("nombre_buscar").value;
     // Construye la URL completa para la búsqueda
@@ -23,7 +21,7 @@ function buscar()
             const producto = response.data[0];
 
             // Muestra directamente los detalles en la modal
-            mostrarDetalles(producto.nombre, producto.marca, producto.costo, producto.sku);
+            mostrarDetalles(producto);
         })
         .catch(function (error) {
             console.log(error);
@@ -31,15 +29,20 @@ function buscar()
 }
 
 // Función para mostrar detalles en la modal
-function mostrarDetalles(nombre, marca, costo, sku) {
+function mostrarDetalles(producto) {
     // Actualiza dinámicamente el contenido de la modal con la información del producto seleccionado
-    document.getElementById("modal-nombre").innerHTML = nombre;
-    document.getElementById("descripcion-1").innerHTML = `
-        <p>Marca: ${marca}</p>
-        <p>Costo: ${costo}</p>
-        <p>SKU: ${sku}</p>
-    `;
+    document.getElementById("modal-nombre").innerHTML = producto.nombre;
+    document.getElementById("modal-marca").innerHTML = `Marca: ${producto.marca}`;
+    document.getElementById("modal-costo").innerHTML = `Costo: ${producto.costo}`;
+    document.getElementById("modal-sku").innerHTML = `SKU: ${producto.sku}`;
+    document.getElementById("modal-imagen").src = producto.imagen;  // Asigna la URL de la imagen al atributo src
 
     // Muestra la modal
     document.getElementById("btn-modal").checked = true;
+    
+    // Agrega el enlace para ver detalles en otra página
+    const verDetallesBtn = document.getElementById("ver-detalles-btn");
+    verDetallesBtn.href = `indexproduct.html?id=${producto._id}`;
 }
+
+// ... el resto de tu código JavaScript ...

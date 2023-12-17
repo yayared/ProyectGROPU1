@@ -1,250 +1,217 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Carrito de Compras</title>
-      <link rel="stylesheet" href="css/estiloscarrito.css"> 
-  </head>
-  <body>
-    <header>
-
-      <section class="header-menu">
-
-          <div class="logo">
-              <!-- logo en header -->
-              <a href="index.html"><img src="Recursos-Imagenes/Logo/Logo-Web.png" alt=""></a>
-
-          </div>
-
-          <div class="Menu-Cat">
-
-              <div class="categoria">
-
-
-
-                  <p> Menu <br> Categoria</p>
-
-              </div>
-
-              <div class="-menu-busqueda">
-
-                  <form action="busqueda">
-                      <input class="barra-busqueda" type="text" placeholder="Busca en Tecnology.com">
-                  </form>
-
-              </div>
-
-          </div>
-
-          <div class="Menu-Cat2">
-        
-              <div class="nosotros">
-
-                  <a href="nosotros.html">Nosotros</a>
-  
-              </div>
-
-              <div class="sesion">
-
-                  <a href="login.html">Inicia <br> Sesión</a>
-
-              </div>
-
-              <div class="carrito-compras">
-
-                  <a href="carrito.html">
-                  <p> Mis <br> Compras</p>
-              </a>
-
-              </div>
-          </div>
-
-
-      </section>
-
-
-  </header>
-
-
-
-
-  <div class="superpadre">
-    <div class="ola">
-  <div class="anterior">
-      
-    <a href="index.html">
-      <img src="img/Vector.png" alt="Vector">
-    </a>
-
-
-      <h3>Razer Viper V2 Pro - Black</h3>
-  </div>
-
-
-
-
-      <div class="productos">
-      <!-- Primer producto -->
-      <div class="product" id="product-1">
-        <img src="https://assets3.razerzone.com/ytBz9UI6MEuLSoKdM6QNPObO4GI=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh36%2Fh6a%2F9636627415070%2F230822-viperv2pro-b-hyperpolling-1500x1000-1.jpg" alt="Producto 1">
-        <h2>Razer Viper V2 Pro - Black + HyperPolling Wireless Dongle Bundle</h2>
-        <div class="quantity">
-           
-          <label for="product1">Precio: $10</label>
-          <!-- Campo de entrada para la cantidad del Producto 1 -->
-          <input type="number" id="product1" min="0" value="0">
-          <!-- Botón para comprar el Producto 1 individualmente -->
-          <button onclick="comprarProducto(10, 'product1')">Comprar</button>
-
-        </div>
-      
-       
-    </div>
-
-    <!-- Segundo producto -->
-    <div class="product" id="product-2">
-        <img src="https://assets3.razerzone.com/ytBz9UI6MEuLSoKdM6QNPObO4GI=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh36%2Fh6a%2F9636627415070%2F230822-viperv2pro-b-hyperpolling-1500x1000-1.jpg" alt="Producto 2">
-        <h2>Razer Viper V2 Pro - Black + HyperPolling Wireless Dongle Bundle</h2>
-        <div class="quantity">
-          <label for="product2">Precio: $20</label>
-          <!-- Campo de entrada para la cantidad del Producto 2 -->
-          <input type="number" id="product2" min="0" value="0">
-          <!-- Botón para comprar el Producto 2 individualmente -->
-          <button onclick="comprarProducto(20, 'product2')">Comprar</button>
-        </div>
-       
-
-    </div>
-  <!-- Tercer producto -->
-  <div class="product" id="product-3">
-      <img src="https://assets3.razerzone.com/ytBz9UI6MEuLSoKdM6QNPObO4GI=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh36%2Fh6a%2F9636627415070%2F230822-viperv2pro-b-hyperpolling-1500x1000-1.jpg" alt="Producto 3">
-      <h2>Razer Viper V2 Pro - Black + HyperPolling Wireless Dongle Bundle</h2>
-      <div class="quantity">
-        <label for="product3">Precio: $30</label>
-    <!-- Campo de entrada para la cantidad del Producto 3 -->
-    <input type="number" id="product3" min="0" value="0">
-    <!-- Botón para comprar el Producto 3 individualmente -->
-    <button onclick="comprarProducto(30, 'product3')">Comprar </button>
-      </div>
-   
-     
-  </div>
-
-  <!-- Cuarto producto -->
-  <div class="product" id="product-4">
-    <img src="https://assets3.razerzone.com/ytBz9UI6MEuLSoKdM6QNPObO4GI=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh36%2Fh6a%2F9636627415070%2F230822-viperv2pro-b-hyperpolling-1500x1000-1.jpg" alt="Producto 3">
-    <h2>Razer Viper V2 Pro - Black + HyperPolling Wireless Dongle Bundle</h2>
-    <div class="quantity">
-      <label for="product4">Precio: $10</label>
-  <!-- Campo de entrada para la cantidad del Producto 3 -->
-  <input type="number" id="product4" min="0" value="0">
-  <!-- Botón para comprar el Producto 3 individualmente -->
-  <button onclick="comprarProducto(10, 'product4')">Comprar </button>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="css/estiloscarrito.css"> 
     
-   
+</head>
+<body>
+  <header>
+
+    <section class="header-menu">
+
+        <div class="logo">
+            <!-- logo en header -->
+            <a href="index.html"><img src="Recursos-Imagenes/Logo/Logo-Web.png" alt=""></a>
+
+        </div>
+
+        <div class="Menu-Cat">
+
+            <div class="categoria">
+
+
+
+                <p> Menu <br> Categoria</p>
+
+            </div>
+
+            <div class="-menu-busqueda">
+
+                <form action="busqueda">
+                    <input class="barra-busqueda" type="text" placeholder="Busca en Tecnology.com">
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="Menu-Cat2">
+      
+            <div class="nosotros">
+
+                <a href="nosotros.html">Nosotros</a>
+
+            </div>
+
+            <div class="sesion">
+
+                <a href="login.html">Inicia <br> Sesión</a>
+
+            </div>
+
+            <div class="carrito-compras">
+
+                <a href="carrito.html">
+                <p> Mis <br> Compras</p>
+            </a>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="superpadre">
+  <div class="ola">
+<div class="anterior">
+    
+  <a href="index.html">
+    <img src="img/Vector.png" alt="Vector">
+  </a>
+
+
+    <h3>TU CARRITO</h3>
+</div>
+
+
+
+
+<div id="idDelElementoCarrito"></div>
+
+  
+ 
+
+  <!--total de los productos-->
 </div>
 <a href="compra.html">
-<button onclick="calcularTotal()">Comprar Total
-  </button></a>  
- 
+<button id="botondecompra" onclick="calcularTotal()">Comprar Total
+</button></a>  
 
-      
+
+    
 </div>
 
 
-      <!-- Repite el mismo formato para los otros productos -->
-      
-      <script src="js/codigocarrito.js"></script>
+    <!-- Repite el mismo formato para los otros productos -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/carrito.js"></script>
 
-      
-     
+    
+
+    
+   
 
 
-    <!--Formulario-->
- 
-    <div class="padreformulario">
-     <div class="formulario">
-       <div class="left-side">
-           <input type="email" placeholder="Tu correo" class="email-input">
-           <button class="subscribe-button">Suscribir</button>
-       </div>
-       <div class="right-side">
-           <h1>Siguenos</h1>
-         
-           <a href="https://www.facebook.com" target="_blank">
-               <img src="img/facebook.png" alt="Facebook">
-           </a>
-           <a href="https://www.instagram.com" target="_blank">
-               <img src="img/instagram.png" alt="Instagram">
-           </a>
-           <a href="https://www.youtube.com" target="_blank">
-               <img src="img/youtube.png" alt="YouTube">
-           </a>
-       </div>
+
+
+
+
+
+
+
+
+    
+
+  <!--Formulario-->
+
+  <div class="padreformulario">
+   <div class="formulario">
+     <div class="left-side">
+         <input type="email" placeholder="Tu correo" class="email-input">
+         <button class="subscribe-button">Suscribir</button>
      </div>
-     </div>
-     
- <!--footer-->
- <br><br>
- <div class="footer">
-     <article class="telf">
-       <h2> <img src="img/Centraltelf.png" alt="">Central Telefonica<br>
-       (01) 510-1777 </h2>
+     <div class="right-side">
+         <h1>Siguenos</h1>
        
-       <h2>Sobre Technology Group </h2>
-       <ul>
-         <li><a href="#popular">Acerca de nosotros</a></li>
-         <li><a href="#simulcasts">Nuestras Ventajas</a></li>
-         <li><a href="#manga">Nuestras Cuentas Bancarias</a></li>
-         <li><a href="#calendario">Nuestras Tiendas</a></li>
-         <li><a href="#noticias">Preguntas Frecuentes</a></li>
-         <li><a href="#juegos">Seguimiento de tu pedido </a></li>
-         <li><a href="#juegos">Contacte con nosotros</a></li>
-         <li><a href="#juegos">Seguimiento de tu pedido </a></li>
-         <li><a href="#juegos">Blog</a></li>
-         <li><a href="#juegos">Mapa del sitio</a></li>
-       </ul>
-     </article>
-     <article class="Whatsapp">
-       <h2>
-         <img src="img/icon _whatsapp_.png" alt=""> Ventas por Whatsapp<br>999888999
-       </h2>
-         
-       <ul>
-         <li><a href="https://www.youtube.com" target="_blank" rel="noopener">Comprar con Confianza</a></li>
-         <li><a href="https://www.facebook.com" target="_blank">Politica de Devoluciones</a></li>
-         <li><a href="https://www.twitter.com" target="_blank">Politica de Privacidad</a></li>
-         <li><a href="https://www.instagram.com" target="_blank">¿Cómo comprar en Technology Group?</a></li>
-         <li><a href="https://www.tiktok.com" target="_blank">Términos y Condiciones</a></li>
-         <li><a href="https://www.twitter.com" target="_blank">Politica de Garantía</a></li>
-         <li><a href="https://www.instagram.com" target="_blank">Politica de Envío</a></li>
-         <li><a href="https://www.tiktok.com" target="_blank">Libro de Reclamaciones</a></li>
-       </ul>
-     </article>
-     
-     <article class="gmail">
-       <h2><img src="img/gmail.png" alt="">
-         Ventas Online</h2>
-       <ul>
-         <li><a href="#prueba"></a></li>
-         
-       </ul>
-     </article>
-     <article class="Localizanos">
-       <h2>
-         <img src="img/Vectormaps.png" alt=""> Nuestras Tiendas<br>Localízanos
-       </h2>
-       <ul>
-         <li><a href="#crear">CONTÁCTENOS
-           <br>Technology Group
-         </a></li>
-         <li><a href="#acceder">(01) 510-7777</a></li>
-         <li><a href="">Ventas@Tgroup.com.pe</a></li>
-       </ul>
-     </article>
+         <a href="https://www.facebook.com" target="_blank">
+             <img src="img/facebook.png" alt="Facebook">
+         </a>
+         <a href="https://www.instagram.com" target="_blank">
+             <img src="img/instagram.png" alt="Instagram">
+         </a>
+         <a href="https://www.youtube.com" target="_blank">
+             <img src="img/youtube.png" alt="YouTube">
+         </a>
+     </div>
    </div>
+   </div>
+   
+<!--footer-->
+<br><br>
+<div class="footer">
+   <article class="telf">
+     <h2> <img src="img/Centraltelf.png" alt="">Central Telefonica<br>
+     (01) 510-1777 </h2>
+     
+     <h2>Sobre Technology Group </h2>
+     <ul>
+       <li><a href="#popular">Acerca de nosotros</a></li>
+       <li><a href="#simulcasts">Nuestras Ventajas</a></li>
+       <li><a href="#manga">Nuestras Cuentas Bancarias</a></li>
+       <li><a href="#calendario">Nuestras Tiendas</a></li>
+       <li><a href="#noticias">Preguntas Frecuentes</a></li>
+       <li><a href="#juegos">Seguimiento de tu pedido </a></li>
+       <li><a href="#juegos">Contacte con nosotros</a></li>
+       <li><a href="#juegos">Seguimiento de tu pedido </a></li>
+       <li><a href="#juegos">Blog</a></li>
+       <li><a href="#juegos">Mapa del sitio</a></li>
+     </ul>
+   </article>
+   <article class="Whatsapp">
+     <h2>
+       <img src="img/icon _whatsapp_.png" alt=""> Ventas por Whatsapp<br>999888999
+     </h2>
+       
+     <ul>
+       <li><a href="https://www.youtube.com" target="_blank" rel="noopener">Comprar con Confianza</a></li>
+       <li><a href="https://www.facebook.com" target="_blank">Politica de Devoluciones</a></li>
+       <li><a href="https://www.twitter.com" target="_blank">Politica de Privacidad</a></li>
+       <li><a href="https://www.instagram.com" target="_blank">¿Cómo comprar en Technology Group?</a></li>
+       <li><a href="https://www.tiktok.com" target="_blank">Términos y Condiciones</a></li>
+       <li><a href="https://www.twitter.com" target="_blank">Politica de Garantía</a></li>
+       <li><a href="https://www.instagram.com" target="_blank">Politica de Envío</a></li>
+       <li><a href="https://www.tiktok.com" target="_blank">Libro de Reclamaciones</a></li>
+     </ul>
+   </article>
+   
+   <article class="gmail">
+     <h2><img src="img/gmail.png" alt="">
+       Ventas Online</h2>
+     <ul>
+       <li><a href="#prueba"></a></li>
+       
+     </ul>
+   </article>
+   <article class="Localizanos">
+     <h2>
+       <img src="img/Vectormaps.png" alt=""> Nuestras Tiendas<br>Localízanos
+     </h2>
+     <ul>
+       <li><a href="#crear">CONTÁCTENOS
+         <br>Technology Group
+       </a></li>
+       <li><a href="#acceder">(01) 510-7777</a></li>
+       <li><a href="">Ventas@Tgroup.com.pe</a></li>
+     </ul>
+   </article>
  </div>
+</div>
 
-  </html>
+</html>
