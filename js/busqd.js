@@ -1,3 +1,5 @@
+//busqd.js
+
 // Configuración de la URL de la API
 const url_api = "http://localhost:5530/api/productos/nombre/";
 
