@@ -5,56 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuario</title>
     <link rel="icon" href="Recursos-Imagenes/Logo/Isotipo-Web.png">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/registro.js"></script>
     <link rel="stylesheet" href="css/styleRegistro.css">
 </head>
+
 <body>
-    
-   
 
-    <section class="hoja1">
-     
-            <div class="subhoja1">
-                 
-                <h1> <b>REGISTRO DE USUARIO</b></h1>
-                 
-                <input type="text" id="nombre"placeholder="Ingrese nombre completo"  >
-            
-                     
-                <input type="text" id="usuario"placeholder="Nombre de usuario" >
-               
-               
-                    
-               <input type="password" id="contraseña" placeholder="Crear contraseña">
 
-                
-                
-                    
-                <input type="text"id="direccion" placeholder="Direccion" >
+    <section class="hoja1"> 
 
-                <input type="tel"id="telefono"  placeholder="Telefono">
-            
-                <input type="date"id="fecha" placeholder="Fecha de nacimiento" >
-                    
-                
-                
-                
+        <div class="subhoja1">
 
-                <button  type="submit">REGISTAR</button>
+            <h1><b>REGISTRO DE USUARIO</b></h1>
+            <input type="text" id="nombre" placeholder="Ingrese nombre completo">
+            <input type="text" id="usuario" placeholder="Nombre de usuario">
+            <input type="password" id="contraseña" placeholder="Crear contraseña">
+            <input type="text" id="direccion" placeholder="Direccion">
+            <input type="tel" id="telefono" placeholder="Telefono">
+            <input type="date" id="fecha" placeholder="Fecha de nacimiento">
+            <button type="button" onclick="registrarUsuario()">REGISTRAR</button>
+        </div>
 
-            
-            </div>
-
-            <div class="subhoja2">
-                
-                <video src="Recursos-Imagenes/Imagenes-Resgistro/video de valorant.mp4" type="video/mp4" autoplay muted loop ></video>
-                
-
-                <a href="login.html"><img src="Recursos-Imagenes/Logo/Logo-Web.png"></a>
-
-             </div>
-
+        <div class="subhoja2">
+            <video src="Recursos-Imagenes/Imagenes-Resgistro/video de valorant.mp4" type="video/mp4" autoplay muted loop></video>
+            <a href="login.html"><img src="Recursos-Imagenes/Logo/Logo-Web.png"></a>
+        </div>
     </section>
 
-    
+    <script src="tu_script.js"></script>
 </body>
 </html>
